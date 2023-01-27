@@ -207,6 +207,7 @@ footer {
     padding: 50px 0 50px 0;
     background-color: black;
     color: white;
+    /* width: 1246px; */
     /* margin: 0 auto; */
     /* background-color: black; */
 }
@@ -232,6 +233,119 @@ footer p {
     /* color: white; */
 }
 
-.social-media li a{
+.social-media li a {
     color: white;
+}
+
+
+/* media query for mobile devices */
+
+@media screen and (max-width:576px) {
+
+    /* disable section */
+    header {
+        display: none;
+    }
+
+    /* .container{
+        width: 100%;
+    } */
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .banner-info{
+        text-align: center;
+    }
+
+    .circle {
+        left: 294px;
+        top: 83px;
+    }
+
+    /* company name */
+    .company{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 50px;
+    }
+
+    .company li{
+        text-align: center;
+    }
+
+    /* popular collection */
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        padding: 0 45px;
+    }
+    .product-title{
+        font-size: 39px;
+    }
+
+    .img-title{
+        font-size: 43px;
+    }
+
+    .product-price {
+        font-weight: 400;
+        font-size: 36px;
+    }
+    .product img {
+        width: 100%;
+        height: 100%;
+        /* width: 300px; */
+        /* height: 256px; */
+    }
+
+    .fa-star, .fa-star-half-stroke {
+        color: #FB8200;
+        font-size: 24px;
+    }
+
+    .rating-numeric {
+        margin-left: 15px;
+        font-size: 23px;
+    }
+
+    .product-des {
+        font-size: 28px;
+    }
+
+    .see-more{
+        padding-right: 42px;
+        margin-bottom: 30px;
+    }
+
+    /* featured product */
+    .featured-product {
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 26px;
+        width: 100%;
+    }
+
+    .featured-product-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .featured-product-img-info{
+        text-align: center;
+        padding: 0px 12px;
+    }
+
+    .featured-product-img img {
+        width: 91%;
+        height: 100%;
+    }
+
+    /* footer section */
+
+    footer{
+        width: 1012px;
+    }
+
 }
